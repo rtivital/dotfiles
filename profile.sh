@@ -7,6 +7,7 @@ alias gcm='git commit -m'
 alias gp='git push'
 alias gclean='git clean -df && git checkout -- .'
 alias gpull='git pull'
+alias glog='git log --oneline -n'
 
 alias npr='npm run'
 alias ns='npm start'
