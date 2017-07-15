@@ -5,9 +5,11 @@ alias gs='git status'
 alias ga='git add .'
 alias gcm='git commit -m'
 alias gp='git push'
+alias gr='git reset'
+alias glog='git log --oneline -n'
 alias gclean='git clean -df && git checkout -- .'
 alias gpull='git pull'
-alias glog='git log --oneline -n'
+
 
 alias npr='npm run'
 alias ns='npm start'
