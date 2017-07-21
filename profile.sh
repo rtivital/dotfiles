@@ -17,6 +17,8 @@ alias ns='npm start'
 alias nt='npm test'
 alias ni='npm install'
 alias niy='npm init -y'
+
+
 alias y='yarn'
 alias ya='yarn add'
 alias yad='yarn add --dev'
