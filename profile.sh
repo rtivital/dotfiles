@@ -1,6 +1,7 @@
 alias bash_profile='a ~/.bash_profile'
 
 alias g='git'
+alias gcn='git clone'
 alias gs='git status'
 alias ga='git add .'
 alias gaf='git add'
