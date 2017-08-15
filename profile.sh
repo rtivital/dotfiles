@@ -1,4 +1,14 @@
+export PS1='\w $ '
+
 alias bash_profile='a ~/.bash_profile'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ls='ls -af'
+
+mcd() { mkdir -p "$1" && cd "$1"; }
+port() { lsof -i tcp:$1; }
+trash() { command mv "$@" ~/.Trash; }
 
 alias g='git'
 alias gcn='git clone'
@@ -27,9 +37,6 @@ alias yad='yarn add --dev'
 
 alias a='atom'
 alias t='touch'
-port() {
-  lsof -i tcp:$1
-}
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
