@@ -28,8 +28,9 @@ alias npr='npm run'
 alias ns='npm start'
 alias nt='npm test'
 alias ni='npm install'
+alias nis='npm install --save'
+alias nisd='npm install --save-dev'
 alias niy='npm init -y'
-
 
 alias y='yarn'
 alias ya='yarn add'
