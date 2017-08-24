@@ -37,6 +37,7 @@ alias ya='yarn add'
 alias yad='yarn add --dev'
 
 alias a='atom'
+alias a.='atom .'
 alias t='touch'
 
 export NVM_DIR="$HOME/.nvm"
