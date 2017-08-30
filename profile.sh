@@ -5,6 +5,7 @@ alias bash_profile='a ~/.bash_profile'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ls='ls -af'
+alias cleands='find . -name ".DS_Store" #-delete'
 
 mcd() { mkdir -p "$1" && cd "$1"; }
 port() { lsof -i tcp:$1; }
