@@ -33,6 +33,10 @@ alias nis='npm install --save'
 alias nisd='npm install --save-dev'
 alias niy='npm init -y'
 
+# Installs latest version of eslint-config-aibnb-base to the project:
+# https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base
+alias nab='npm info "eslint-config-airbnb-base@latest" peerDependencies --json | command sed "s/[\{\},]//g ; s/: /@/g" | xargs npm install --save-dev "eslint-config-airbnb-base@latest"'
+
 alias y='yarn'
 alias ya='yarn add'
 alias yad='yarn add --dev'
