@@ -32,6 +32,7 @@ alias ni='npm install'
 alias nis='npm install --save'
 alias nisd='npm install --save-dev'
 alias niy='npm init -y'
+alias ninf='npm info'
 
 
 # Installs latest version of eslint-config-aibnb will all dependencies to the project:
