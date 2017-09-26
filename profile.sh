@@ -23,7 +23,12 @@ alias gr='git reset'
 alias glog='git log --oneline -n'
 alias gclean='git clean -df && git checkout -- .'
 alias gpull='git pull'
-
+alias gbl='git branch'
+gb() { git checkout -b "$1"; }
+gbd() {
+  git branch -d $1;
+  git push origin --delete $1;
+}
 
 alias npr='npm run'
 alias ns='npm start'
