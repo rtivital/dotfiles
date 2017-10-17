@@ -1,2 +1,1 @@
-# bash_profile
-my bash profile
+# My Bash profile
