@@ -1,6 +1,7 @@
 export PS1='\w $ '
 
 alias bash_profile='a ~/.bash_profile'
+alias js='node'
 
 alias ..='cd ..'
 alias ...='cd ../..'
