@@ -25,7 +25,7 @@ alias glog='git log --oneline -n'
 alias gclean='git clean -df && git checkout -- .'
 alias gpull='git pull'
 alias gbl='git branch'
-gb() { git checkout -b "$1"; }
+alias gb='git checkout -b'
 gbd() {
   git branch -d $1;
   git push origin --delete $1;
