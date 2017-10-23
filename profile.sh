@@ -7,9 +7,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ls='ls -af'
 alias cleands='find . -name ".DS_Store" -delete'
+alias sass2scss='sass-convert -R --from sass --to scss'
 
 mcd() { mkdir -p "$1" && cd "$1"; }
 port() { lsof -i tcp:$1; }
+b64() { openssl base64 -in "$1" -out "$1.b64"; }
 trash() { command mv "$@" ~/.Trash; }
 
 alias g='git'
