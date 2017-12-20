@@ -61,6 +61,9 @@ alias a='atom'
 alias a.='atom .'
 alias t='touch'
 
+alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
+localhost() { chrome "http://localhost:$1"; }
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
