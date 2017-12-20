@@ -23,6 +23,7 @@ alias gs='git status'
 alias ga='git add .'
 alias gaf='git add'
 alias gcm='git commit -m'
+alias gcmr='git commit --amend -m'
 alias gca='git commit -a'
 alias gp='git push'
 alias gr='git reset'
@@ -62,6 +63,9 @@ alias yad='yarn add --dev'
 alias a='atom'
 alias a.='atom .'
 alias t='touch'
+
+alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
+localhost() { chrome "http://localhost:$1"; }
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
