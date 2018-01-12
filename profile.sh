@@ -26,7 +26,7 @@ alias gp='git push'
 alias gr='git reset'
 alias glog='git log --oneline -n'
 alias gclean='git clean -df && git checkout -- .'
-alias gpull='git pull'
+alias gll='git pull'
 alias gbl='git branch'
 alias gb='git checkout -b'
 gbd() {
