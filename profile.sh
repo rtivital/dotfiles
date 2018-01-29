@@ -14,6 +14,9 @@ port() { lsof -i tcp:$1; }
 b64() { openssl base64 -in "$1" -out "$1.b64"; }
 trash() { command mv "$@" ~/.Trash; }
 
+# Get file size in kb
+alias fs='du -hs'
+
 alias g='git'
 alias gcn='git clone'
 alias gs='git status'
