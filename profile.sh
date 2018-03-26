@@ -1,5 +1,3 @@
-export PS1='\w $ '
-
 alias bash_profile='a ~/.bash_profile'
 alias js='node'
 
@@ -13,9 +11,6 @@ mcd() { mkdir -p "$1" && cd "$1"; }
 port() { lsof -i tcp:$1; }
 b64() { openssl base64 -in "$1" -out "$1.b64"; }
 trash() { command mv "$@" ~/.Trash; }
-
-# Get file size in kb
-alias fs='du -hs'
 
 alias g='git'
 alias gcn='git clone'
@@ -46,6 +41,7 @@ alias nis='npm install --save'
 alias nisd='npm install --save-dev'
 alias niy='npm init -y'
 alias ninf='npm info'
+alias ntu='npm test -- -u'
 
 
 # Installs latest version of eslint-config-airbnb will all dependencies to the project:
@@ -67,6 +63,10 @@ alias t='touch'
 
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
 localhost() { chrome "http://localhost:$1"; }
+
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
