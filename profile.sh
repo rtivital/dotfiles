@@ -42,6 +42,7 @@ alias nisd='npm install --save-dev'
 alias niy='npm init -y'
 alias ninf='npm info'
 alias ntu='npm test -- -u'
+alias nvmrc='node -v > .nvmrc'
 
 
 # Installs latest version of eslint-config-airbnb will all dependencies to the project:
