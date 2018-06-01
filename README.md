@@ -1,8 +1,6 @@
 # My Bash profile
 
 ```sh
-export PS1='\w $ '
-
 alias bash_profile='a ~/.bash_profile'
 alias js='node'
 
@@ -26,6 +24,7 @@ alias gcm='git commit -m'
 alias gcmr='git commit --amend -m'
 alias gca='git commit -a'
 alias gp='git push'
+alias ghp='git push heroku'
 alias gf='git fetch'
 alias gr='git reset'
 alias glog='git log --oneline -n'
@@ -46,6 +45,8 @@ alias nis='npm install --save'
 alias nisd='npm install --save-dev'
 alias niy='npm init -y'
 alias ninf='npm info'
+alias ntu='npm test -- -u'
+alias nvmrc='node -v > .nvmrc'
 
 
 # Installs latest version of eslint-config-airbnb will all dependencies to the project:
@@ -67,6 +68,10 @@ alias t='touch'
 
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
 localhost() { chrome "http://localhost:$1"; }
+
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
