@@ -23,6 +23,7 @@ alias gc='git add . && git commit -m'
 alias gca='git commit -a'
 alias gp='git push'
 alias ghp='git push heroku'
+alias gpa='git remote | xargs -L1 git push --all' # Push all branches to all remotes
 alias gf='git fetch'
 alias gr='git reset'
 alias glog='git log --oneline -n'
