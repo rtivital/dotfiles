@@ -31,10 +31,15 @@ alias gclean='git clean -df && git checkout -- .'
 alias gll='git pull'
 alias gbl='git branch'
 alias gb='git checkout -b'
+
+# Delete both local and remote branch
 gbd() {
   git branch -d $1;
   git push origin --delete $1;
 }
+
+# Delete all local branches that were merged into master
+alias gdm='git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d'
 
 alias npr='npm run'
 alias ns='npm start'
