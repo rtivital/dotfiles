@@ -21,10 +21,12 @@ alias gs='git status'
 alias ga='git add .'
 alias gaf='git add'
 alias gcm='git commit -m'
-alias gcmr='git commit --amend -m'
+alias gam='git commit --amend -m'
+alias gc='git add . && git commit -m'
 alias gca='git commit -a'
 alias gp='git push'
 alias ghp='git push heroku'
+alias gpa='git remote | xargs -L1 git push --all' # Push all branches to all remotes
 alias gf='git fetch'
 alias gr='git reset'
 alias glog='git log --oneline -n'
@@ -32,10 +34,15 @@ alias gclean='git clean -df && git checkout -- .'
 alias gll='git pull'
 alias gbl='git branch'
 alias gb='git checkout -b'
+
+# Delete both local and remote branch
 gbd() {
   git branch -d $1;
   git push origin --delete $1;
 }
+
+# Delete all local branches that were merged into master
+alias gdm='git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d'
 
 alias npr='npm run'
 alias ns='npm start'
