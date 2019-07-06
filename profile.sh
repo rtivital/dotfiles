@@ -1,17 +1,18 @@
 alias bash_profile='a ~/.bash_profile'
-alias js='node'
 
+alias t='touch'
+alias js='node'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ls='ls -af'
 alias cleands='find . -name ".DS_Store" -delete'
-alias sass2scss='sass-convert -R --from sass --to scss'
 
 mcd() { mkdir -p "$1" && cd "$1"; }
 port() { lsof -i tcp:$1; }
 b64() { openssl base64 -in "$1" -out "$1.b64"; }
 trash() { command mv "$@" ~/.Trash; }
 
+# Git alias
 alias g='git'
 alias gcn='git clone'
 alias gs='git status'
@@ -38,9 +39,7 @@ gbd() {
   git push origin --delete $1;
 }
 
-# Delete all local branches that were merged into master
-alias gdm='git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d'
-
+# nmp alias
 alias npr='npm run'
 alias ns='npm start'
 alias nt='npm test'
@@ -61,15 +60,20 @@ alias nair='npm info "eslint-config-airbnb@latest" peerDependencies --json | com
 # https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base
 alias nairb='npm info "eslint-config-airbnb-base@latest" peerDependencies --json | command sed "s/[\{\},]//g ; s/: /@/g" | xargs npm install --save-dev "eslint-config-airbnb-base@latest"'
 
-
+# yarn alias
 alias y='yarn'
 alias ya='yarn add'
 alias yad='yarn add --dev'
 
+# Atom and vscode alias
 alias a='atom'
 alias a.='atom .'
-alias t='touch'
+alias atom.='atom .'
+alias c='code'
+alias c.='code .'
+alias code.='code .'
 
+# Browsers
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
 localhost() { chrome "http://localhost:$1"; }
 
