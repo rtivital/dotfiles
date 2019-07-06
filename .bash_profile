@@ -1,6 +1,6 @@
 update-dot-files() {
-  curl -o- https://raw.githubusercontent.com/rtivital/bash_profile/master/.bash_profile > /Users/$(whoami)/.bash_profile
-  curl -o- https://raw.githubusercontent.com/rtivital/bash_profile/master/.bashrc > /Users/$(whoami)/.bashrc
+  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profile > /Users/$(whoami)/.bash_profile
+  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > /Users/$(whoami)/.bashrc
 }
 
 alias bash-profile='a ~/.bash_profile'
