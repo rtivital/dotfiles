@@ -1,4 +1,4 @@
-# My Bash profile
+# My dotfiles
 
 In my bash profile I have lots of aliases and useful functions to work with git, npm, yarn, atom, vscode and macos system. Also .bashrc includes special profile to work with git repositories. For more details on git integration see .bashrc and .bash_profile for aliases.
 
