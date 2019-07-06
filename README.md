@@ -5,8 +5,8 @@ In my bash profile I have lots of aliases and useful functions to work with git,
 ## Instalation
 To install my .bash_profile and .bashrc use these two commands:
 ```sh
-curl -o- https://raw.githubusercontent.com/rtivital/bash_profile/master/.bash_profile.sh > /Users/$(whoami)/.bash_profile
-curl -o- https://raw.githubusercontent.com/rtivital/bash_profile/master/.bashrc > /Users/$(whoami)/.bashrc
+curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profile > /Users/$(whoami)/.bash_profile
+curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > /Users/$(whoami)/.bashrc
 ```
 
 After installation you can run this bash alias to sync with this Github repo:
