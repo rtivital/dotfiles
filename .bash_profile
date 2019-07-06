@@ -1,4 +1,9 @@
-alias bash_profile='a ~/.bash_profile'
+update-dot-files() {
+  curl -o- https://raw.githubusercontent.com/rtivital/bash_profile/master/.bash_profile > /Users/$(whoami)/.bash_profile
+  curl -o- https://raw.githubusercontent.com/rtivital/bash_profile/master/.bashrc > /Users/$(whoami)/.bashrc
+}
+
+alias bash-profile='a ~/.bash_profile'
 
 alias t='touch'
 alias js='node'
