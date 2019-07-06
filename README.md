@@ -9,6 +9,12 @@ curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profil
 curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > /Users/$(whoami)/.bashrc
 ```
 
+After instalation is finished run this command to apply new aliases and git integration:
+```sh
+source ~/.bash_profile
+```
+
+## Keep sync with repo
 After installation you can run this bash alias to sync with this Github repo:
 ```sh
 update-dot-files
