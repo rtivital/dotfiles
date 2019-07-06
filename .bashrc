@@ -31,7 +31,7 @@ function parse_git_branch {
   if [[ ${git_status} =~ ${diverge_pattern} ]]; then
     remote="${YELLOW}↕"
   fi
-  
+
   if [[ ${git_status} =~ ${branch_pattern} ]]; then
     branch=${BASH_REMATCH[1]}
     echo " (${branch})${remote}${state}"
@@ -40,15 +40,16 @@ function parse_git_branch {
 
 function prompt_func() {
   previous_return_value=$?;
-  if [ "$TERM" != "linux" -a -z "$EMACS" ] then
+
+  if [ "$TERM" != "linux" -a -z "$EMACS" ]; then
     TITLEBAR="\[\e]2;\u@\h:\w\a\]"
   else
     TITLEBAR=""
   fi
 
   prompt="${TITLEBAR}${BLUE}\w${GREEN}$(parse_git_branch)${COLOR_NONE} "
-  
-  if test $previous_return_value -eq 0 then
+
+  if test $previous_return_value -eq 0; then
     PS1="${prompt}${GREEN}\\\$${COLOR_NONE} "
   else
     PS1="${prompt}${LIGHT_RED}\\\$${COLOR_NONE} "
