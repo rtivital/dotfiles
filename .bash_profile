@@ -3,6 +3,7 @@ update-dot-files() {
   curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > /Users/$(whoami)/.bashrc
 }
 
+alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 alias bash-profile='a ~/.bash_profile'
 
 alias t='touch'
