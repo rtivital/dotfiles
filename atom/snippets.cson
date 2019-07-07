@@ -36,7 +36,7 @@ import { storiesOf } from '@storybook/react';
 import centered from '@storybook/addon-centered/react';
 import $1 from './$1';
 
-storiesOf('$2', module)
+storiesOf('$1', module)
 .addDecorator(centered)
 .add('Default', () => (
   <div style={{ width: 450 }}>
