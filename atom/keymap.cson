@@ -1,0 +1,4 @@
+# Enables emmet tab completion for JSX with emmet-jsx-props package
+# https://atom.io/packages/emmet-jsx-props
+'atom-text-editor[data-grammar~="jsx"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
