@@ -1,15 +1,16 @@
 # My dotfiles
 
-In my bash profile I have lots of aliases and useful functions to work with git, npm, yarn, atom, vscode and macos system. Also .bashrc includes special profile to work with git repositories. For more details on git integration see .bashrc and .bash_profile for aliases.
+My dotfiles include: hyper configuration, .bash_profile. and .bashrc. In bash profile I have lots of aliases and useful functions to work with git, npm, yarn, atom, vscode and macos system. Also .bashrc includes special profile to work with git repositories. For more details on git integration see .bashrc and .bash_profile for aliases. Hyper configuration includes some basic plugins and styles.
 
 ## Instalation
 To install my .bash_profile and .bashrc use these two commands:
 ```sh
-curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profile > /Users/$(whoami)/.bash_profile
-curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > /Users/$(whoami)/.bashrc
+curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profile > ~/.bash_profile
+curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > ~/.bashrc
+curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.hyper.js > ~/.hyper.js
 ```
 
-After instalation is finished run this command to apply new aliases and git integration:
+After instalation is finished run this command to apply new aliases and git integration (hyper configuration will be updated. automatically after hyper restart):
 ```sh
 source ~/.bash_profile
 ```
