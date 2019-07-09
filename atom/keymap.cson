@@ -2,3 +2,6 @@
 # https://atom.io/packages/emmet-jsx-props
 'atom-text-editor[data-grammar~="jsx"]:not([mini])':
   'tab': 'emmet:expand-abbreviation-with-tab'
+
+'atom-text-editor[data-grammar~="tsx"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
