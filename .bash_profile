@@ -1,6 +1,8 @@
 update-dot-files() {
-  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profile > /Users/$(whoami)/.bash_profile
-  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > /Users/$(whoami)/.bashrc
+  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profile > ~/.bash_profile
+  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > ~/.bashrc
+  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.hyper.js > ~/.hyper.js
+  source ~/.bash_profile
 }
 
 # Over time docker will take all of your disk space
