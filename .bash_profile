@@ -3,6 +3,14 @@ update-dot-files() {
   curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > /Users/$(whoami)/.bashrc
 }
 
+# Over time docker will take all of your disk space
+clean-docker() {
+  docker container prune
+  docker system prune
+  docker image prune
+  docker volume prune
+}
+
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 alias bash-profile='a ~/.bash_profile'
 
