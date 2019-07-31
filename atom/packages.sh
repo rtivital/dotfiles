@@ -20,3 +20,4 @@ apm install linter-jsonlint # https://atom.io/packages/linter-jsonlint
 apm install linter-ui-default # https://atom.io/packages/linter-ui-default
 apm install prettier-atom # https://atom.io/packages/prettier-atom
 apm install wakatime # https://atom.io/packages/wakatime
+apm install tabnine # https://atom.io/packages/tabnine
