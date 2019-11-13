@@ -106,3 +106,6 @@ export NVM_DIR="$HOME/.nvm"
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
+
+# Mac os catalina complains a lot about bash
+export BASH_SILENCE_DEPRECATION_WARNING=1
