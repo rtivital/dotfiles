@@ -58,6 +58,7 @@ gbd() {
 
 # nmp alias
 alias npr='npm run'
+alias ne='npm run exec'
 alias ns='npm start'
 alias nt='npm test'
 alias ni='npm install'
