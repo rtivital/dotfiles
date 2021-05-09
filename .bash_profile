@@ -94,7 +94,7 @@ alias code.='code .'
 
 # Browsers
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
-localhost() { chrome "http://localhost:$1"; }
+lh() { chrome "http://localhost:$1"; }
 
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
