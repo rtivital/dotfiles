@@ -25,6 +25,6 @@ After installation you can run this bash alias to sync with this Github repo:
 update-dot-files
 ```
 
-## Licence
+## License
 
 MIT
