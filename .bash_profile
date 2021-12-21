@@ -73,7 +73,7 @@ alias nvmrc='node -v > .nvmrc'
 alias ntt='npm run typecheck'
 alias nj='npm run jest'
 alias ntj='npm run typecheck && npm run jest'
-
+alias nsb='npm run storybook'
 
 # Installs latest version of eslint-config-airbnb will all dependencies to the project:
 # https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
