@@ -110,5 +110,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Mac os catalina complains a lot about bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
