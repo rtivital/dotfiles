@@ -60,6 +60,7 @@ gbd() {
 alias npr='npm run'
 alias ne='npm run exec'
 alias ns='npm start'
+alias nd='npm run dev'
 alias nt='npm test'
 alias ni='npm install'
 alias nis='npm install --save'
