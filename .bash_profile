@@ -50,6 +50,17 @@ alias gll='git pull'
 alias gbl='git branch'
 alias gb='git checkout -b'
 
+# Git configs alias
+guw() {
+  git config user.email "vrtischev@aligntech.com"
+  git config user.name "Vitaly Rtischev"
+}
+
+gup() {
+  git config user.email "rtivital@gmail.com"
+  git config user.name "Vitaly Rtishchev"
+}
+
 # Delete both local and remote branch
 gbd() {
   git branch -d $1;
