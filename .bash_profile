@@ -108,6 +108,10 @@ alias c='code'
 alias c.='code .'
 alias code.='code .'
 
+# Utilities
+alias mantine-bump='cd ~/code/templates-mantine/mantine-templates-update-script && npm run bump'
+alias mantine-update='cd ~/code/templates-mantine/mantine-templates-update-script && npm run update'
+
 # Browsers
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
 lh() { chrome "http://localhost:$1"; }
