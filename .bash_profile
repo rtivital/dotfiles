@@ -77,6 +77,7 @@ alias y='yarn'
 alias ya='yarn add'
 alias yad='yarn add --dev'
 alias nvmrc='node -v > .nvmrc'
+alias nvm-update='nvm install "lts/*" --reinstall-packages-from="$(nvm current)"'
 
 # Vscode alias
 alias code.='code .'
