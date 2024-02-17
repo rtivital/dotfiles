@@ -43,6 +43,9 @@ alias glog='git log --oneline -n'
 alias gclean='git clean -df && git checkout -- .'
 alias gll='git pull'
 alias gbl='git branch'
+alias b='git switch'
+alias gco='git checkout'
+
 
 # Git configs alias
 guw() {
