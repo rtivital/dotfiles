@@ -82,6 +82,12 @@ alias yad='yarn add --dev'
 alias nvmrc='node -v > .nvmrc'
 alias nvm-update='nvm install "lts/*" --reinstall-packages-from="$(nvm current)"'
 
+## Backend aliases
+alias gob='go build'
+alias gor='go run'
+alias got='go test'
+alias p='python3'
+
 # Vscode alias
 alias code.='code .'
 
