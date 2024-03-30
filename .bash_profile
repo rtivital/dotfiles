@@ -116,7 +116,9 @@ fi
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
+GOPATH="$HOME/go"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+PATH="$HOME/go/bin:$PATH"
 export PATH
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
