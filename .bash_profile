@@ -1,6 +1,10 @@
 update-dot-files() {
   curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profile > ~/.bash_profile
   curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > ~/.bashrc
+  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/get-repo-host.js > ~/get-repo-host.js
+  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/get-repo-path.js > ~/get-repo-path.js
+  chmod +x ~/get-repo-host.js
+  chmod +x ~/get-repo-path.js
 }
 
 # Over time docker will take all of your disk space
@@ -18,6 +22,7 @@ alias t='touch'
 alias js='node'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias cd..='cd ..'
 alias ls='ls -af'
 alias cleands='find . -name ".DS_Store" -delete'
 
@@ -45,6 +50,12 @@ alias gll='git pull'
 alias gbl='git branch'
 alias b='git switch'
 alias gco='git checkout'
+
+clone() {
+  REPO_HOST=$(~/get-repo-host.js $1)
+  REPO_PATH=$(~/get-repo-path.js $1)
+  git clone "$REPO_HOST" "$HOME/$REPO_PATH"
+}
 
 
 # Git configs alias
@@ -88,12 +99,11 @@ alias gor='go run'
 alias got='go test'
 alias p='python3'
 
-# Vscode alias
+# Other alias
 alias code.='code .'
+alias work='cd ~/work'
+alias github='cd ~/github'
 
-# Utilities
-alias mantine-bump='cd ~/code/templates-mantine/mantine-templates-update-script && npm run bump'
-alias mantine-update='cd ~/code/templates-mantine/mantine-templates-update-script && npm run update'
 
 # Browsers
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
