@@ -75,7 +75,8 @@ gbd() {
   git push origin --delete $1;
 }
 
-# nmp and yarn alias
+# nmp, node and yarn alias
+alias nr='node --run'
 alias n='npm run'
 alias npr='npm run'
 alias ns='npm start'
