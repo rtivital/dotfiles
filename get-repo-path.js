@@ -3,6 +3,7 @@
 let [, , url] = process.argv;
 
 const repo = url.split("/").pop().replace(".git", "");
-const folder = url.includes("aligntech") ? "work" : "github";
+const folder =
+  url.includes("aligntech") || url.includes("align-web") ? "work" : "github";
 
 process.stdout.write(`${folder}/${repo}`);
