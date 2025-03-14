@@ -52,6 +52,10 @@ alias gbl='git branch'
 alias b='git switch'
 alias gco='git checkout'
 
+alias git-accept-ours='git checkout --ours .'
+alias git-accept-theirs='git checkout --theirs .'
+alias git-conflict='git diff --name-only --diff-filter=U'
+
 clone() {
   REPO_HOST=$(~/get-repo-host.js $1)
   REPO_PATH=$(~/get-repo-path.js $1)
