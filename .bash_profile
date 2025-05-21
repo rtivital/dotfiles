@@ -109,6 +109,7 @@ alias p='python3'
 alias code.='code .'
 alias work='cd ~/work'
 alias github='cd ~/github'
+alias copy-files-list='ls -1 | sort -f | pbcopy'
 
 
 # Browsers
