@@ -1,10 +1,6 @@
 update-dot-files() {
   curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bash_profile > ~/.bash_profile
   curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/.bashrc > ~/.bashrc
-  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/get-repo-host.js > ~/get-repo-host.js
-  curl -o- https://raw.githubusercontent.com/rtivital/dotfiles/master/get-repo-path.js > ~/get-repo-path.js
-  chmod +x ~/get-repo-host.js
-  chmod +x ~/get-repo-path.js
 }
 
 # Over time docker will take all of your disk space
@@ -55,24 +51,6 @@ alias gco='git checkout'
 alias git-accept-ours='git checkout --ours .'
 alias git-accept-theirs='git checkout --theirs .'
 alias git-conflict='git diff --name-only --diff-filter=U'
-
-clone() {
-  REPO_HOST=$(~/get-repo-host.js $1)
-  REPO_PATH=$(~/get-repo-path.js $1)
-  git clone "$REPO_HOST" "$HOME/$REPO_PATH"
-}
-
-
-# Git configs alias
-guw() {
-  git config user.email "vrtischev@aligntech.com"
-  git config user.name "Vitaly Rtischev"
-}
-
-gup() {
-  git config user.email "rtivital@gmail.com"
-  git config user.name "Vitaly Rtishchev"
-}
 
 # Delete both local and remote branch
 gbd() {
