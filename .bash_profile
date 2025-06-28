@@ -125,6 +125,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 GOPATH="$HOME/go"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+PATH="/Applications/GoLand.app/Contents/MacOS:$PATH"
 PATH="$HOME/go/bin:$PATH"
 export PATH
 
