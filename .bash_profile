@@ -76,6 +76,7 @@ alias ya='yarn add'
 alias yad='yarn add --dev'
 alias nvmrc='node -v > .nvmrc'
 alias nvm-update='nvm install "lts/*" --reinstall-packages-from="$(nvm current)"'
+alias ncu='npx npm-check-updates'
 
 ## Backend aliases
 alias gob='go build'
