@@ -114,5 +114,3 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Mac os catalina complains a lot about bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
-
-source "$HOME/.gvm/scripts/gvm"
