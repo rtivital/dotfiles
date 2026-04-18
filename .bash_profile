@@ -52,7 +52,7 @@ alias ntj='npm run typecheck && npm run jest'
 alias nsb='npm run storybook'
 alias y='yarn'
 alias nvmrc='node -v > .nvmrc'
-alias nvm-update='nvm install "lts/*" --reinstall-packages-from="$(nvm current)"'
+nvm-update() { nvm install "$1" --reinstall-packages-from="$(nvm current)"; }
 alias ncu='npx npm-check-updates'
 
 # Other alias
