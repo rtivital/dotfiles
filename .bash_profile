@@ -45,7 +45,7 @@ gbd() {
 alias npr='npm run'
 alias ns='npm start'
 alias nd='npm run dev'
-alias nt='npm test && npm run test:all'
+alias nt='npm test'
 alias ntt='npm run typecheck'
 alias nj='npm run jest'
 alias ntj='npm run typecheck && npm run jest'
