@@ -59,6 +59,7 @@ alias ncu='npx npm-check-updates'
 alias code.='code .'
 alias copy-files-list='ls -1 | sort -f | pbcopy'
 alias ip='curl ifconfig.me'
+alias mdtasks="ls -1 | sort -f | sed 's/^/- [ ] /'"
 
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
