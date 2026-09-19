@@ -13,6 +13,7 @@ alias ls='ls -af'
 
 mcd() { mkdir -p "$1" && cd "$1"; }
 port() { lsof -i tcp:$1; }
+kill-port() { local pids=$(lsof -ti tcp:$1); if [ -n "$pids" ]; then kill -9 $pids && echo "Killed process(es) on port $1: $pids"; else echo "No process is running on port $1"; fi; }
 b64() { openssl base64 -in "$1" -out "$1.b64"; }
 trash() { command mv "$@" ~/.Trash; }
 
