@@ -56,6 +56,16 @@ alias nvmrc='node -v > .nvmrc'
 nvm-update() { nvm install "$1" --reinstall-packages-from="$(nvm current)" && nvm alias default "$1" && nvm use "$1"; }
 alias ncu='npx npm-check-updates'
 
+# Claude
+claude() {
+  case "$PWD/" in
+    "$HOME/variant/"*) CLAUDE_CONFIG_DIR="$HOME/.claude-work" command claude "$@" ;;
+    *) command claude "$@" ;;
+  esac
+}
+alias claude-work='CLAUDE_CONFIG_DIR="$HOME/.claude-work" command claude'
+alias claude-personal='CLAUDE_CONFIG_DIR="$HOME/.claude" command claude'
+
 # Other alias
 alias code.='code .'
 alias copy-files-list='ls -1 | sort -f | pbcopy'
