@@ -66,6 +66,16 @@ claude() {
 alias claude-work='CLAUDE_CONFIG_DIR="$HOME/.claude-work" command claude'
 alias claude-personal='CLAUDE_CONFIG_DIR="$HOME/.claude" command claude'
 
+# Codex
+codex() {
+  case "$PWD/" in
+    "$HOME/variant/"*) CODEX_HOME="$HOME/.codex-work" command codex "$@" ;;
+    *) command codex "$@" ;;
+  esac
+}
+alias codex-work='CODEX_HOME="$HOME/.codex-work" command codex'
+alias codex-personal='CODEX_HOME="$HOME/.codex" command codex'
+
 # Other alias
 alias code.='code .'
 alias copy-files-list='ls -1 | sort -f | pbcopy'
