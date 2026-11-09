@@ -42,6 +42,14 @@ gbd() {
   git push origin --delete $1;
 }
 
+# Open current folder repository on GitHub in Chrome
+repo() {
+  local url
+  url=$(git remote get-url origin 2>/dev/null) || { echo "No origin remote in this folder"; return 1; }
+  url=$(echo "$url" | sed -E 's#^(ssh://)?git@([^:/]+)[:/]#https://\2/#; s#\.git$##')
+  open -a "Google Chrome" "$url"
+}
+
 # nmp, node and yarn alias
 alias npr='npm run'
 alias ns='npm start'
