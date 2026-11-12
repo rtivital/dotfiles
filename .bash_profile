@@ -104,6 +104,7 @@ PATH="$HOME/go/bin:$PATH"
 export PATH
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$HOME/.local/share/mise/shims:$PATH"
 
 # Mac os catalina complains a lot about bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
